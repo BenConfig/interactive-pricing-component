@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="main.css">
+    
+    <title>Frontend Mentor | Interactive Pricing Component</title>
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <h1>Simple, traffic-based pricing</h1>
+      <p class="lead">
+        Sign-up for our 30-day trial.
+        <span class="line-break">No credit card required.</span>
+      </p>
+
+    </header>
+    
+    <main>
+
+      <section class="pricing">
+
+        <h2 class="sr-only">Pricing</h2>
+
+        <p class="pageviews">100K pageviews</p>
+
+        <label class="sr-only" for="range">Select page views range</label>
+        <input
+          class="range"
+          type="range"
+          id="range"
+          value="50"
+          min="0"
+          max="100"
+          step="25"
+          aria-valuenow="50">
+
+        <p class="cost" aria-live="polite">
+          <span class="cost-figure">$16.00</span>
+          <span class="cost-frequency">/ month</span>
+        </p>
+
+        <fieldset class="toggle-container">
+          <legend class="sr-only">Select billing frequency</legend>
+
+          <label class="label-monthly" for="monthly">Monthly Billing</label>
+          <input
+            class="sr-only"
+            type="radio"
+            name="billing"
+            value="monthly"
+            id="monthly"
+            checked>
+
+          <div class="toggle-outer" aria-hidden="true">
+            <div class="toggle-inner"></div>
+          </div>
+
+          <label class="label-yearly" for="yearly">Yearly Billing
+            <span class="discount" aria-label="with 25% discount">
+              <span class="discount-sm-viewport" aria-hidden="true">-</span>25%
+              <span class="discount-lg-viewport" aria-hidden="true"> discount</span>
+            </span>
+          </label>
+
+          <input
+            class="sr-only"
+            type="radio"
+            name="billing"
+            value="yearly"
+            id="yearly">
+        </fieldset>
+
+      </section>
+
+      <section class="start-trial">
+
+        <h2 class="sr-only">Start Trial</h2>
+
+        <ul class="perks">
+          <li class="perk">Unlimited websites</li>
+          <li class="perk">100% data ownership</li>
+          <li class="perk">Email reports</li>
+        </ul>
+
+        <a class="btn" href="#">Start my trial</a>
+
+      </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+
+</html>

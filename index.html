@@ -30,7 +30,7 @@
 
         <h2 class="sr-only">Pricing</h2>
 
-        <p class="pageviews">100K pageviews</p>
+        <p class="pageviews" id="pageviews">100K pageviews</p>
 
         <label class="sr-only" for="range">Select page views range</label>
         <input
@@ -41,7 +41,8 @@
           min="0"
           max="100"
           step="25"
-          aria-valuenow="50">
+          aria-valuenow="50"
+          aria-controls="pageviews">
 
         <p class="cost" aria-live="polite">
           <span class="cost-figure">$16.00</span>
